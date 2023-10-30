@@ -12,8 +12,3 @@ export default class Validator {
     return new ArraySchema([validator]);
   }
 }
-
-const validator = new Validator();
-const schema1 = validator.array().maxDepth(30);
-const schema2 = validator.array().maxDepth(8);
-const schema3 = validator.array().maxDepth(3);
